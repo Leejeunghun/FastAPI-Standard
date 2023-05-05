@@ -30,6 +30,9 @@ https://github.com/pahkey/fastapi-book
  uvicorn main:app --reload
 
 
+# 설치 모듈
+npm install svelte-spa-router
+npm install bootstrap
 # 공부 저장소 링크
 
 https://github.com/Leejeunghun/FastAPI-Standard
