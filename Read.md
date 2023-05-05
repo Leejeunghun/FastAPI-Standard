@@ -26,6 +26,9 @@ https://github.com/pahkey/fastapi-book
 
 * 4장은 직접 테스트 안하고 문서 보면서 참고 할 예정
 
+# 기초 명령어
+ uvicorn main:app --reload
+
 
 # 공부 저장소 링크
 
