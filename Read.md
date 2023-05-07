@@ -30,7 +30,12 @@ https://github.com/pahkey/fastapi-book
  uvicorn main:app --reload
 
 
+
+
 # 설치 모듈
+pip install "pydantic[email]"
+ pip install "passlib[bcrypt]"
+ 
 npm install svelte-spa-router
 npm install bootstrap
 npm install moment # 시간 기록 하기 위해 사용
