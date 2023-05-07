@@ -10,8 +10,18 @@ router = APIRouter(
     prefix="/api/question",
 )
 
+@router.get("/list", response_model=question_schema.QuestionList)
+def question_list(db: Session = Depends(get_db),
+                  page: int = 0, size: int = 10):
+    total, _question_list = question_crud.get_question_list(
+        db, skip=page*size, limit=size)
+    return {
+        'total': total,
+        'question_list': _question_list
+    }
 
-@router.get("/list",response_model=list[question_schema.Question])
+
+@router.get("/list_Ori",response_model=list[question_schema.Question])
 def question_list(db: Session = Depends(get_db)):# 의존성 추가
     ''' 아래 역활로 변경 파일 닫기 자동화
     db = SessionLocal()
@@ -25,6 +35,17 @@ def question_list(db: Session = Depends(get_db)):# 의존성 추가
     _question_list = question_crud.get_question_list(db)
     return _question_list
 
+
+@router.get("/list", response_model=question_schema.QuestionList)
+def question_list(db: Session = Depends(get_db),
+                  page: int = 0, size: int = 10):
+    total, _question_list = question_crud.get_question_list(
+        db, skip=page*size, limit=size)
+    return {
+        'total': total,
+        'question_list': _question_list
+    }
+
 @router.get("/detail/{question_id}", response_model=question_schema.Question)
 def question_detail(question_id: int, db: Session = Depends(get_db)):
     question = question_crud.get_question(db, question_id=question_id)
@@ -34,3 +55,4 @@ def question_detail(question_id: int, db: Session = Depends(get_db)):
 def question_create(_question_create: question_schema.QuestionCreate,
                     db: Session = Depends(get_db)):
     question_crud.create_question(db=db, question_create=_question_create)
+
