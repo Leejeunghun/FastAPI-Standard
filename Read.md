@@ -43,6 +43,13 @@ npm install svelte-spa-router
 npm install bootstrap
 npm install moment # 시간 기록 하기 위해 사용
 npm install qs
+
+
+# DB 관련 업데이트
+alembic revision --autogenerate
+alembic upgrade head
+-> 이것 유용한지 모르겠음
+
 # 공부 저장소 링크
 
 https://github.com/Leejeunghun/FastAPI-Standard
