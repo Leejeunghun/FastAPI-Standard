@@ -34,11 +34,15 @@ https://github.com/pahkey/fastapi-book
 
 # 설치 모듈
 pip install "pydantic[email]"
- pip install "passlib[bcrypt]"
- 
+pip install "passlib[bcrypt]"
+pip install python-multipart
+pip install "python-jose[cryptography]"
+
+
 npm install svelte-spa-router
 npm install bootstrap
 npm install moment # 시간 기록 하기 위해 사용
+npm install qs
 # 공부 저장소 링크
 
 https://github.com/Leejeunghun/FastAPI-Standard
