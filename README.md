@@ -30,9 +30,42 @@ https://github.com/pahkey/fastapi-book
  uvicorn main:app --reload
 
 
+가상환경 만들기
+``` bash
+mkdir venvs
+cd venvs
+python -m venv myapi
+```
+
+가상환경 진입하기
+```bash
+C:\venvs> cd C:\venvs\myapi\Scripts
+C:\venvs\myapi\Scripts> activate
+(myapi) C:\venvs\myapi\Scripts>
+```
+
+가상 환경에서 FastAPI 설치하기
+```bash
+ pip install fastapi
+ python -m pip install --upgrade pip
+
+```
+
+
+svelte 설치하기
+>
+```bash
+ npm create vite@latest frontend -- --template svelte
+
+  cd frontend
+  npm install
+  npm run dev
+```
 
 
 # 설치 모듈
+
+``` bash
 pip install "pydantic[email]"
 pip install "passlib[bcrypt]"
 pip install python-multipart
@@ -43,11 +76,13 @@ npm install svelte-spa-router
 npm install bootstrap
 npm install moment # 시간 기록 하기 위해 사용
 npm install qs
-
+```
 
 # DB 관련 업데이트
+``` bash
 alembic revision --autogenerate
 alembic upgrade head
+```
 -> 이것 유용한지 모르겠음
 
 # 공부 저장소 링크
