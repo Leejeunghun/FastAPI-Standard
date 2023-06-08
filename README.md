@@ -90,3 +90,6 @@ alembic upgrade head
 # 공부 저장소 링크
 
 https://github.com/Leejeunghun/FastAPI-Standard
+
+
+curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&sudo apt-get install -y nodejs
