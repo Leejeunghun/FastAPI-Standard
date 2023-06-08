@@ -66,6 +66,8 @@ svelte 설치하기
 # 설치 모듈
 
 ``` bash
+ pip install "uvicorn[standard]"
+
 pip install "pydantic[email]"
 pip install "passlib[bcrypt]"
 pip install python-multipart
