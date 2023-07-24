@@ -78,6 +78,12 @@ npm install svelte-spa-router
 npm install bootstrap
 npm install moment # 시간 기록 하기 위해 사용
 npm install qs
+
+
+pip uninstall pyopenssl
+pip uninstall cryptography
+pip install pyopenssl
+pip install cryptography
 ```
 
 # DB 관련 업데이트
